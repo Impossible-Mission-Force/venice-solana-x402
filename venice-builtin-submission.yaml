@@ -8,7 +8,7 @@ description: Solana-native x402 starter for Venice. Sign-In-With-Solana auth,
   the official EVM-only x402 client does not cover. Ships with a SKILL.md for
   Claude Code, Cursor and Codex.
 type: GitHub Repo
-url: https://github.com/<your-handle>/venice-solana-x402
+url: https://github.com/Impossible-Mission-Force/venice-solana-x402
 tags:
   - Agent
   - x402
@@ -16,4 +16,4 @@ tags:
 category: powered-by
 socials:
   - kind: github
-    url: https://github.com/<your-handle>/venice-solana-x402
+    url: https://github.com/Impossible-Mission-Force/venice-solana-x402
