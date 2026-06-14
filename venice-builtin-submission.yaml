@@ -1,19 +1,9 @@
-# Submit by opening a PR that adds this file to
-# github.com/veniceai/builtinvenice under content/projects/
-# (or use the form at https://builtinvenice.ai/). Update url and socials.
+# Submission entry for the Built in Venice directory (builtinvenice.ai).
+# To list the project, open a PR adding this as
+# content/projects/Impossible-Mission-Force-venice-solana-x402.yaml in
+# github.com/veniceai/builtinvenice, or use a form at
+# github.com/veniceai/builtinvenice/issues/new/choose.
 title: Venice Solana x402 Agent Kit
-description: Solana-native x402 starter for Venice. Sign-In-With-Solana auth,
-  USDC top-up on Solana, and a reference autonomous agent that pays per call for
-  Venice private inference and settles its output on-chain. The Solana adapter
-  the official EVM-only x402 client does not cover. Ships with a SKILL.md for
-  Claude Code, Cursor and Codex.
+description: Solana-native x402 adapter for Venice. Sign-In-With-Solana auth, USDC top-up on Solana, and a reference agent that pays per call for private inference and settles output on-chain.
 type: GitHub Repo
-url: https://github.com/Impossible-Mission-Force/venice-solana-x402
-tags:
-  - Agent
-  - x402
-  - On-chain
-category: powered-by
-socials:
-  - kind: github
-    url: https://github.com/Impossible-Mission-Force/venice-solana-x402
+url: https://github.com/Impossible-Mission-

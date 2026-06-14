@@ -18,7 +18,8 @@ export interface AuthVariant {
   chainValue: string;
 }
 
-// Best current guess. probe-auth confirms or corrects this in one run.
+// Verified against the live Venice endpoint by probe-auth: base58 or base64 both
+// pass, and the chain must be sent as chainId with the CAIP-2 id (not network).
 export const DEFAULT_AUTH_VARIANT: AuthVariant = {
   sigEncoding: "base64",
   chainKey: "chainId",

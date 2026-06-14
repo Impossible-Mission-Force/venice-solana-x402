@@ -2,10 +2,10 @@
 
 A Solana adapter for Venice AI x402 wallet auth.
 
-Venice supports x402 on Solana (top-up endpoint and wallet inference auth, per
-the May 2026 changelog), but the developer guide and the official
-[venice-x402-client](https://github.com/veniceai/x402-client) only cover Base
-(chainId 8453). This library handles the Solana path: authenticate a Solana
+Venice supports x402 on Solana for both the top-up endpoint and wallet inference
+auth, but the developer guide and the official
+[venice-x402-client](https://github.com/veniceai/x402-client) still only cover
+Base (chainId 8453). This library handles the Solana path: authenticate a Solana
 wallet, pay for inference with USDC on Solana, and settle agent output on-chain.
 No API key, no account.
 
@@ -52,8 +52,8 @@ Payment contract. The 402 response carries `x402Version: 2` and a Solana
 transaction fee, so the wallet only needs USDC to top up. SOL is only spent by
 the agent's own memo.
 
-Payment payload. This is the part that bites. `x402@1.2.0` (current latest on
-npm) emits the older flat `PaymentPayload` shape
+Payment payload. This is the part that bites. x402@1.2.0, the latest npm release,
+still emits the older flat `PaymentPayload` shape
 `{scheme, network, x402Version, payload}`. Venice implements the current x402
 spec, which wraps the requirement in `accepted` and adds a `resource` object:
 

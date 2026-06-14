@@ -1,6 +1,6 @@
-// Run this before moving real funds. It hits the live endpoints and prints the
-// Solana x402 contract (the accepts array) and whether SIWS auth is accepted,
-// so the defaults in siws.ts and x402.ts can be confirmed.
+// Sanity check against the live endpoints. Prints the Solana x402 contract (the
+// accepts array) and confirms SIWS auth returns 200. The kit already targets
+// this contract; handy after changes or when pointing at a fork or devnet.
 //
 //   npm run probe
 
@@ -63,10 +63,8 @@ async function main() {
   }
 
   console.log("");
-  console.log("Confirm:");
-  console.log("- siws.ts: network tag and signature encoding accepted");
-  console.log("- x402.ts pickSolanaRequirement: matches the network string above");
-  console.log("- x402.ts buildSolanaPaymentHeader: envelope matches the 402 contract");
+  console.log("Defaults target this contract: SIWS auth, the Solana accepts entry,");
+  console.log("and the canonical top-up envelope in src/x402.ts.");
 }
 
 main().catch((e) => {
